@@ -1,2 +1,1 @@
-# printf
-ALX printf project
+My first readme
