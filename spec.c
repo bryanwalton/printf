@@ -30,8 +30,10 @@ specifier_t specifiers[] = {
 int i = 0;
 
 while (specifiers[i].specifier)
+
 {
 if (*s == specifiers[i].specifier[0])
+
 {
 										return (specifiers[i].f);
 										}
@@ -135,9 +137,13 @@ d = va_arg(ap, int);
 else
 
 {
-while (_isdigit(*s))
-										d = d * 10 + (*s++ - '0');
-										}
+
+while (_isdigit(*s))								
+d = d * 10 + (*s++ - '0');
+
+}
+
 params->width = d;
+
 return (s);
 }
